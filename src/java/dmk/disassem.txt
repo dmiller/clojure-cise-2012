@@ -1,0 +1,63 @@
+Java version:
+
+static double nextValue(double, double, double);
+  Code:
+   0:	ldc2_w	#2; //double 0.5d
+   3:	dload_2
+   4:	dload	4
+   6:	dadd
+   7:	dload_0
+   8:	dadd
+   9:	dmul
+   10:	dreturn
+
+public static void stepSliceInPlace(double[], double[], int, int, double, double);
+  Code:
+   0:	iload_3
+   1:	iconst_1
+   2:	isub
+   3:	istore	8
+   5:	dload	4
+   7:	dstore	9
+   9:	iload_2
+   10:	istore	11
+   12:	iload	11
+   14:	iload	8
+   16:	if_icmpgt	79
+   19:	iload	11
+   21:	iload	8
+   23:	if_icmpne	44
+   26:	aload_0
+   27:	iload	8
+   29:	aload_1
+   30:	iload	8
+   32:	daload
+   33:	dload	9
+   35:	dload	6
+   37:	invokestatic	#4; //Method nextValue:(DDD)D
+   40:	dastore
+   41:	goto	73
+   44:	aload_0
+   45:	iload	11
+   47:	daload
+   48:	dstore	12
+   50:	aload_0
+   51:	iload	11
+   53:	aload_1
+   54:	iload	11
+   56:	daload
+   57:	dload	9
+   59:	aload_0
+   60:	iload	11
+   62:	iconst_1
+   63:	iadd
+   64:	daload
+   65:	invokestatic	#4; //Method nextValue:(DDD)D
+   68:	dastore
+   69:	dload	12
+   71:	dstore	9
+   73:	iinc	11, 1
+   76:	goto	12
+   79:	return
+
+}

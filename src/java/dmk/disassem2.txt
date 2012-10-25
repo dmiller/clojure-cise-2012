@@ -1,0 +1,120 @@
+clojure
+stepsliceinplace
+
+public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object);
+  Code:
+   0:	aload	4
+   2:	aconst_null
+   3:	astore	4
+   5:	invokestatic	#84; //Method clojure/lang/RT.intCast:(Ljava/lang/Object;)I
+   8:	i2l
+   9:	lconst_1
+   10:	lsub
+   11:	lstore	7
+   13:	aload	5
+   15:	aconst_null
+   16:	astore	5
+   18:	invokestatic	#88; //Method clojure/lang/RT.doubleCast:(Ljava/lang/Object;)D
+   21:	dstore	9
+   23:	aload_3
+   24:	aconst_null
+   25:	astore_3
+   26:	invokestatic	#84; //Method clojure/lang/RT.intCast:(Ljava/lang/Object;)I
+   29:	i2l
+   30:	lstore	11
+   32:	lload	11
+   34:	lload	7
+   36:	lcmp
+   37:	ifge	121
+   40:	aload_1
+   41:	checkcast	#90; //class "[D"
+   44:	lload	11
+   46:	invokestatic	#93; //Method clojure/lang/RT.intCast:(J)I
+   49:	daload
+   50:	dstore	13
+   52:	aload_1
+   53:	checkcast	#90; //class "[D"
+   56:	lload	11
+   58:	invokestatic	#93; //Method clojure/lang/RT.intCast:(J)I
+   61:	getstatic	#67; //Field const__8:Lclojure/lang/Var;
+   64:	invokevirtual	#97; //Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+   67:	checkcast	#99; //class clojure/lang/IFn$DDDD
+   70:	aload_2
+   71:	checkcast	#90; //class "[D"
+   74:	lload	11
+   76:	invokestatic	#93; //Method clojure/lang/RT.intCast:(J)I
+   79:	daload
+   80:	dload	9
+   82:	aload_1
+   83:	checkcast	#90; //class "[D"
+   86:	lload	11
+   88:	invokestatic	#104; //Method clojure/lang/Numbers.inc:(J)J
+   91:	invokestatic	#93; //Method clojure/lang/RT.intCast:(J)I
+   94:	daload
+   95:	invokeinterface	#108,  7; //InterfaceMethod clojure/lang/IFn$DDDD.invokePrim:(DDD)D
+   100:	invokestatic	#111; //Method clojure/lang/RT.aset:([DID)D
+   103:	pop2
+   104:	dload	13
+   106:	lload	11
+   108:	lconst_1
+   109:	ladd
+   110:	lstore	11
+   112:	dstore	9
+   114:	goto	32
+   117:	goto	167
+   120:	pop
+   121:	aload_1
+   122:	checkcast	#90; //class "[D"
+   125:	lload	7
+   127:	invokestatic	#93; //Method clojure/lang/RT.intCast:(J)I
+   130:	getstatic	#67; //Field const__8:Lclojure/lang/Var;
+   133:	invokevirtual	#97; //Method clojure/lang/Var.getRawRoot:()Ljava/lang/Object;
+   136:	checkcast	#99; //class clojure/lang/IFn$DDDD
+   139:	aload_2
+   140:	checkcast	#90; //class "[D"
+   143:	lload	11
+   145:	invokestatic	#93; //Method clojure/lang/RT.intCast:(J)I
+   148:	daload
+   149:	dload	9
+   151:	aload	6
+   153:	invokestatic	#88; //Method clojure/lang/RT.doubleCast:(Ljava/lang/Object;)D
+   156:	invokeinterface	#108,  7; //InterfaceMethod clojure/lang/IFn$DDDD.invokePrim:(DDD)D
+   161:	invokestatic	#111; //Method clojure/lang/RT.aset:([DID)D
+   164:	invokestatic	#119; //Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+   167:	areturn
+
+}
+
+
+nextvalue
+public java.lang.Object invoke(java.lang.Object, java.lang.Object, java.lang.Object);
+  Code:
+   0:	aload_0
+   1:	aload_1
+   2:	checkcast	#56; //class java/lang/Number
+   5:	invokestatic	#60; //Method clojure/lang/RT.doubleCast:(Ljava/lang/Object;)D
+   8:	aload_2
+   9:	checkcast	#56; //class java/lang/Number
+   12:	invokestatic	#60; //Method clojure/lang/RT.doubleCast:(Ljava/lang/Object;)D
+   15:	aload_3
+   16:	checkcast	#56; //class java/lang/Number
+   19:	invokestatic	#60; //Method clojure/lang/RT.doubleCast:(Ljava/lang/Object;)D
+   22:	invokeinterface	#62,  7; //InterfaceMethod clojure/lang/IFn$DDDD.invokePrim:(DDD)D
+   27:	new	#32; //class java/lang/Double
+   30:	dup_x2
+   31:	dup_x2
+   32:	pop
+   33:	invokespecial	#65; //Method java/lang/Double."<init>":(D)V
+   36:	areturn
+
+}
+public final double invokePrim(double, double, double);
+  Code:
+   0:	ldc2_w	#29; //double 0.5d
+   3:	dload_3
+   4:	dload	5
+   6:	dadd
+   7:	dload_1
+   8:	dadd
+   9:	dmul
+   10:	dreturn
